@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FuGer-Secure | Detecta y ubica fugas eléctricas a tiempo</title>
+  <meta name="description" content="FuGer-Secure mide la tensión y la corriente de cada circuito las 24 horas y te avisa al celular cuando aparece una fuga, con la zona aproximada y su nivel de gravedad.">
+  <meta name="theme-color" content="#0B1F3A">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="FuGer-Secure, ir al inicio">
+        <span class="brand-mark"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M338.8-9.9c11.9 8.6 16.3 24.2 10.9 37.8L271.3 224 416 224c13.5 0 25.5 8.4 30.1 21.1s.7 26.9-9.6 35.5l-288 240c-11.3 9.4-27.4 9.9-39.3 1.3s-16.3-24.2-10.9-37.8L176.7 288 32 288c-13.5 0-25.5-8.4-30.1-21.1s-.7-26.9 9.6-35.5l288-240c11.3-9.4 27.4-9.9 39.3-1.3z"/></svg></span>
+        <span class="brand-name">FuGer<span>-Secure</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="nav-toggle-open"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></span>
+        <span class="nav-toggle-close"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg></span>
+        <span class="sr-only">Abrir menú de navegación</span>
+      </button>
+      <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#perfiles">Perfiles</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#instalacion">Instalación</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li class="nav-cta"><a href="#contacto" class="btn btn-primary btn-sm">Pedir asesoría</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Monitoreo de fugas eléctricas para hogares, negocios y técnicos</p>
+          <h1 id="hero-titulo">Detecta la fuga eléctrica antes que tu recibo, tu tablero o un incendio</h1>
+          <p class="lead">FuGer-Secure mide la tensión y la corriente de cada circuito las 24 horas. Si aparece una fuga, te avisa al celular con la zona aproximada, su nivel de gravedad y lo que conviene hacer en ese momento.</p>
+          <div class="hero-actions">
+            <a href="#demo" class="btn btn-primary"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M91.2 36.9c-12.4-6.8-27.4-6.5-39.6 .7S32 57.9 32 72l0 368c0 14.1 7.5 27.2 19.6 34.4s27.2 7.5 39.6 .7l336-184c12.8-7 20.8-20.5 20.8-35.1s-8-28.1-20.8-35.1l-336-184z"/></svg> Probar la demo en vivo</a>
+            <a href="#calculadora" class="btn btn-ghost">Calcular cuánto pierdo</a>
+          </div>
+          <ul class="hero-points">
+            <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"/></svg> Zona aproximada de la falla</li>
+            <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M232.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L13.9 149.8C5.4 145.8 0 137.3 0 128s5.4-17.9 13.9-21.8L232.5 5.2zM48.1 218.4l164.3 75.9c27.7 12.8 59.6 12.8 87.3 0l164.3-75.9 34.1 15.8c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L13.9 277.8C5.4 273.8 0 265.3 0 256s5.4-17.9 13.9-21.8l34.1-15.8zM13.9 362.2l34.1-15.8 164.3 75.9c27.7 12.8 59.6 12.8 87.3 0l164.3-75.9 34.1 15.8c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L13.9 405.8C5.4 401.8 0 393.3 0 384s5.4-17.9 13.9-21.8z"/></svg> Gravedad en tres niveles</li>
+            <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M192-32c17.7 0 32 14.3 32 32l0 96 128 0 0-96c0-17.7 14.3-32 32-32s32 14.3 32 32l0 96 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 48.7c-98.6 8.1-176 90.7-176 191.3 0 27.3 5.7 53.3 16 76.9l0 3.1c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-66.7C165.2 398.1 96 319.1 96 224l0-64c-17.7 0-32-14.3-32-32S78.3 96 96 96l64 0 0-96c0-17.7 14.3-32 32-32zM496 256a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm59.3 107.3c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0l-36.7 36.7-36.7-36.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l36.7 36.7-36.7 36.7c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l36.7-36.7 36.7 36.7c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-36.7-36.7 36.7-36.7z"/></svg> Corte remoto con confirmación</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-top"><span>FuGer-Secure</span><span>10:42</span></div>
+            <div class="phone-alert">
+              <span class="sev sev-critico"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zm0-192a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.6 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z"/></svg> Crítico</span>
+              <strong>Fuga en Cocina</strong>
+              <span>45 mA · detectada hace un momento</span>
+            </div>
+            <div class="phone-plan">
+              <div class="pz">Sala</div><div class="pz pz-hot">Cocina</div>
+              <div class="pz">Dorm. 1</div><div class="pz">Baño</div>
+            </div>
+            <div class="phone-btn">Cortar circuito de Cocina</div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <ul class="value-strip" aria-label="Por qué FuGer-Secure">
+          <li><strong>Sin revisar el tablero a ciegas.</strong> La alerta te dice en qué zona buscar.</li>
+          <li><strong>Menos horas de diagnóstico.</strong> El técnico llega sabiendo qué circuito revisar.</li>
+          <li><strong>Tu negocio sigue operando.</strong> Cortas solo el circuito afectado, no todo el local.</li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section class="section" id="problema" aria-labelledby="problema-titulo">
+      <div class="container">
+        <h2 id="problema-titulo" class="section-title">Las fugas eléctricas se descubren tarde</h2>
+        <p class="section-sub">Un disyuntor común puede no saltar con una fuga pequeña. Mientras tanto, la energía se pierde, el recibo sube y el cable dañado se calienta dentro de la pared.</p>
+        <ul class="stats">
+          <li class="stat"><span class="stat-num">9 430</span><span class="stat-label">incendios atendidos en el Perú durante 2014</span></li>
+          <li class="stat"><span class="stat-num">35 %</span><span class="stat-label">de esos incendios tuvo origen eléctrico</span></li>
+          <li class="stat"><span class="stat-num">1 703</span><span class="stat-label">fueron provocados por cortocircuitos</span></li>
+        </ul>
+        <p class="source">Fuente: Cuerpo General de Bomberos Voluntarios del Perú, citado en Lezama, Schweitzer y Weber (2021).</p>
+      </div>
+    </section>
+
+    
+    <section class="section section-alt" id="como-funciona" aria-labelledby="como-titulo">
+      <div class="container">
+        <h2 id="como-titulo" class="section-title">Cómo funciona</h2>
+        <p class="section-sub">De la instalación a la alerta en tres pasos.</p>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-icon"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M128-32c17.7 0 32 14.3 32 32l0 96 128 0 0-96c0-17.7 14.3-32 32-32s32 14.3 32 32l0 96 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 64c0 95.1-69.2 174.1-160 189.3l0 66.7c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-66.7C101.2 398.1 32 319.1 32 224l0-64c-17.7 0-32-14.3-32-32S14.3 96 32 96l64 0 0-96c0-17.7 14.3-32 32-32z"/></svg></span>
+            <h3><span class="step-num">1</span> Instalamos el sensor</h3>
+            <p>Un técnico de FuGer-Secure lo coloca en tu tablero y lo vincula a tu cuenta con un código QR. Tú solo nombras tus zonas: cocina, sala, horno.</p>
+          </li>
+          <li class="step">
+            <span class="step-icon"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM256 416c35.3 0 64-28.7 64-64 0-16.2-6-31.1-16-42.3l69.5-138.9c5.9-11.9 1.1-26.3-10.7-32.2s-26.3-1.1-32.2 10.7L261.1 288.2c-1.7-.1-3.4-.2-5.1-.2-35.3 0-64 28.7-64 64s28.7 64 64 64zM176 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM96 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm352-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg></span>
+            <h3><span class="step-num">2</span> Mide todo el día</h3>
+            <p>Compara la corriente que entra y la que sale de cada circuito. Cuando la diferencia supera el umbral, eso es una fuga.</p>
+          </li>
+          <li class="step">
+            <span class="step-icon"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 0c-17.7 0-32 14.3-32 32l0 3.2C119 50 64 114.6 64 192l0 21.7c0 48.1-16.4 94.8-46.4 132.4L7.8 358.3C2.7 364.6 0 372.4 0 380.5 0 400.1 15.9 416 35.5 416l376.9 0c19.6 0 35.5-15.9 35.5-35.5 0-8.1-2.7-15.9-7.8-22.2l-9.8-12.2C400.4 308.5 384 261.8 384 213.7l0-21.7c0-77.4-55-142-128-156.8l0-3.2c0-17.7-14.3-32-32-32zM162 464c7.1 27.6 32.2 48 62 48s54.9-20.4 62-48l-124 0z"/></svg></span>
+            <h3><span class="step-num">3</span> Te avisa y te guía</h3>
+            <p>Recibes la alerta con la zona, la gravedad y los pasos a seguir. Si es crítica, puedes cortar ese circuito desde el celular.</p>
+          </li>
+        </ol>
+        <p class="note"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM224 160a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm-8 64l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg> FuGer-Secure complementa a tu interruptor diferencial. No lo reemplaza.</p>
+      </div>
+    </section>
+
+    
+    <section class="section" id="perfiles" aria-labelledby="perfiles-titulo">
+      <div class="container">
+        <h2 id="perfiles-titulo" class="section-title">Hecho para quien vive, trabaja o repara la instalación</h2>
+        <p class="section-sub">Elige tu perfil y mira lo que FuGer-Secure resuelve para ti.</p>
+        <div class="tabs" data-tabs>
+          <div class="tablist" role="tablist" aria-label="Perfiles de usuario">
+            <button role="tab" id="tab-hogar" aria-controls="panel-hogar" aria-selected="true"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z"/></svg> Hogar</button>
+            <button role="tab" id="tab-negocio" aria-controls="panel-negocio" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M30.7 72.3C37.6 48.4 59.5 32 84.4 32l344 0c24.9 0 46.8 16.4 53.8 40.3l23.4 80.2c12.8 43.7-20.1 87.5-65.6 87.5-26.3 0-49.4-14.9-60.8-37.1-11.6 21.9-34.6 37.1-61.4 37.1-26.6 0-49.7-15-61.3-37-11.6 22-34.7 37-61.3 37-26.8 0-49.8-15.1-61.4-37.1-11.4 22.1-34.5 37.1-60.8 37.1-45.6 0-78.4-43.7-65.6-87.5L30.7 72.3zM96.4 352l320 0 0-66.4c7.6 1.6 15.5 2.4 23.5 2.4 14.3 0 28-2.6 40.5-7.2l0 151.2c0 26.5-21.5 48-48 48l-352 0c-26.5 0-48-21.5-48-48l0-151.2c12.5 4.6 26.1 7.2 40.5 7.2 8.1 0 15.9-.8 23.5-2.4l0 66.4z"/></svg> Negocio</button>
+            <button role="tab" id="tab-tecnico" aria-controls="panel-tecnico" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M70.8-6.7c5.4-5.4 13.8-6.2 20.2-2L209.9 70.5c8.9 5.9 14.2 15.9 14.2 26.6l0 49.6 90.8 90.8c33.3-15 73.9-8.9 101.2 18.5L542.2 382.1c18.7 18.7 18.7 49.1 0 67.9l-60.1 60.1c-18.7 18.7-49.1 18.7-67.9 0L288.1 384c-27.4-27.4-33.5-67.9-18.5-101.2l-90.8-90.8-49.6 0c-10.7 0-20.7-5.3-26.6-14.2L23.4 58.9c-4.2-6.3-3.4-14.8 2-20.2L70.8-6.7zm145 303.5c-6.3 36.9 2.3 75.9 26.2 107.2l-94.9 95c-28.1 28.1-73.7 28.1-101.8 0s-28.1-73.7 0-101.8l135.4-135.5 35.2 35.1zM384.1 0c20.1 0 39.4 3.7 57.1 10.5 10 3.8 11.8 16.5 4.3 24.1L388.8 91.3c-3 3-4.7 7.1-4.7 11.3l0 41.4c0 8.8 7.2 16 16 16l41.4 0c4.2 0 8.3-1.7 11.3-4.7l56.7-56.7c7.6-7.5 20.3-5.7 24.1 4.3 6.8 17.7 10.5 37 10.5 57.1 0 43.2-17.2 82.3-45 111.1l-49.1-49.1c-33.1-33-78.5-45.7-121.1-38.4l-56.8-56.8 0-29.7-.2-5c-.8-12.4-4.4-24.3-10.5-34.9 29.4-35 73.4-57.2 122.7-57.3z"/></svg> Técnico</button>
+          </div>
+
+          <div class="tabpanel" role="tabpanel" id="panel-hogar" aria-labelledby="tab-hogar" tabindex="0">
+            <div class="seg-grid">
+              <div>
+                <p class="pain">"Sube el recibo y no sé si es una fuga o un aparato."</p>
+                <h3>Para tu casa</h3>
+                <p>Sabrás si tu instalación está bien sin bajar llaves al azar. Si hay una fuga, verás en qué zona está y si puedes esperar a tu electricista o debes actuar ya.</p>
+                <button type="button" class="btn btn-outline btn-sm" data-perfil="Hogar">Quiero esto para mi hogar</button>
+              </div>
+              <ul class="check-list">
+                <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Alerta en el celular antes de que llegue el recibo</li>
+                <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Zona aproximada en el plano de tu casa</li>
+                <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Pasos claros de qué hacer y qué evitar</li>
+                <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Compartes la alerta con tu electricista de confianza</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="panel-negocio" aria-labelledby="tab-negocio" tabindex="0" hidden>
+            <div class="seg-grid">
+              <div>
+                <p class="pain">"Si se cae la luz en la cocina, se cae la venta del día."</p>
+                <h3>Para tu negocio</h3>
+                <p>Ubica la falla por circuito y corta solo el que tiene problemas. El resto del local sigue funcionando mientras llega el técnico.</p>
+                <button type="button" class="btn btn-outline btn-sm" data-perfil="Negocio">Quiero esto para mi negocio</button>
+              </div>
+              <ul class="check-list">
+                <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Alertas por circuito o equipo (horno, cámara de frío)</li>
+                <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Corte remoto del circuito afectado</li>
+                <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Estimación de la energía que se pierde cada mes</li>
+                <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Varios locales en un solo panel</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="panel-tecnico" aria-labelledby="tab-tecnico" tabindex="0" hidden>
+            <div class="seg-grid">
+              <div>
+                <p class="pain">"Pierdo horas midiendo cable por cable hasta dar con la falla."</p>
+                <h3>Para técnicos electricistas</h3>
+                <p>Llega al servicio con el circuito identificado y los datos de la fuga. Dedica tu tiempo a reparar y entrega al cliente un respaldo de lo que hiciste.</p>
+                <button type="button" class="btn btn-outline btn-sm" data-perfil="Técnico electricista">Quiero usarlo en mis servicios</button>
+              </div>
+              <ul class="check-list">
+                <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Telemetría de tensión, corriente y fuga por circuito</li>
+                <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Umbral de alerta ajustable a cada instalación</li>
+                <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Historial de eventos antes de la visita</li>
+                <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Vista técnica separada de la vista del cliente</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="features-title">Lo que incluye FuGer-Secure</h3>
+        <ul class="features">
+          <li class="feature"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 0c-17.7 0-32 14.3-32 32l0 3.2C119 50 64 114.6 64 192l0 21.7c0 48.1-16.4 94.8-46.4 132.4L7.8 358.3C2.7 364.6 0 372.4 0 380.5 0 400.1 15.9 416 35.5 416l376.9 0c19.6 0 35.5-15.9 35.5-35.5 0-8.1-2.7-15.9-7.8-22.2l-9.8-12.2C400.4 308.5 384 261.8 384 213.7l0-21.7c0-77.4-55-142-128-156.8l0-3.2c0-17.7-14.3-32-32-32zM162 464c7.1 27.6 32.2 48 62 48s54.9-20.4 62-48l-124 0z"/></svg><h4>Alerta inmediata</h4><p>Notificación al celular apenas la fuga supera el umbral.</p></li>
+          <li class="feature"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"/></svg><h4>Zona de la falla</h4><p>Ubicación aproximada según el circuito donde se mide la fuga.</p></li>
+          <li class="feature"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M232.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L13.9 149.8C5.4 145.8 0 137.3 0 128s5.4-17.9 13.9-21.8L232.5 5.2zM48.1 218.4l164.3 75.9c27.7 12.8 59.6 12.8 87.3 0l164.3-75.9 34.1 15.8c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L13.9 277.8C5.4 273.8 0 265.3 0 256s5.4-17.9 13.9-21.8l34.1-15.8zM13.9 362.2l34.1-15.8 164.3 75.9c27.7 12.8 59.6 12.8 87.3 0l164.3-75.9 34.1 15.8c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L13.9 405.8C5.4 401.8 0 393.3 0 384s5.4-17.9 13.9-21.8z"/></svg><h4>Tres niveles de gravedad</h4><p>Normal, precaución o crítico, con ícono, texto y trama. Se entiende incluso sin color.</p></li>
+          <li class="feature"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M192-32c17.7 0 32 14.3 32 32l0 96 128 0 0-96c0-17.7 14.3-32 32-32s32 14.3 32 32l0 96 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 48.7c-98.6 8.1-176 90.7-176 191.3 0 27.3 5.7 53.3 16 76.9l0 3.1c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-66.7C165.2 398.1 96 319.1 96 224l0-64c-17.7 0-32-14.3-32-32S78.3 96 96 96l64 0 0-96c0-17.7 14.3-32 32-32zM496 256a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm59.3 107.3c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0l-36.7 36.7-36.7-36.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l36.7 36.7-36.7 36.7c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l36.7-36.7 36.7 36.7c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-36.7-36.7 36.7-36.7z"/></svg><h4>Corte remoto</h4><p>Apaga solo el circuito afectado, siempre con una confirmación previa.</p></li>
+          <li class="feature"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 32c17.7 0 32 14.3 32 32l0 336c0 8.8 7.2 16 16 16l400 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L80 480c-44.2 0-80-35.8-80-80L0 64C0 46.3 14.3 32 32 32zM144 224c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32zm144-64l0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-160c0-17.7 14.3-32 32-32s32 14.3 32 32zm80 32c17.7 0 32 14.3 32 32l0 96c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-96c0-17.7 14.3-32 32-32zM512 96l0 224c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-224c0-17.7 14.3-32 32-32s32 14.3 32 32z"/></svg><h4>Historial</h4><p>Consumo diario y días con eventos de fuga.</p></li>
+          <li class="feature"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 224zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384z"/></svg><h4>Vista técnica</h4><p>Telemetría por circuito y umbral ajustable para el electricista.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section class="section section-alt" id="demo" aria-labelledby="demo-titulo">
+      <div class="container">
+        <h2 id="demo-titulo" class="section-title">Pruébalo: demo en vivo</h2>
+        <p class="section-sub">Datos simulados, sin registrarte. Provoca una fuga y mira cómo responde el panel.</p>
+
+        <ol class="guide" aria-label="Cómo usar la demo">
+          <li><span>1</span> Simula una fuga leve o crítica</li>
+          <li><span>2</span> Revisa la zona, la gravedad y los pasos</li>
+          <li><span>3</span> Corta el circuito o compártelo</li>
+        </ol>
+
+        <div class="demo-modes" role="group" aria-label="Tipo de panel">
+          <button type="button" class="chip" data-mode="hogar" aria-pressed="true"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z"/></svg> Mi instalación</button>
+          <button type="button" class="chip" data-mode="locales" aria-pressed="false"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M30.7 72.3C37.6 48.4 59.5 32 84.4 32l344 0c24.9 0 46.8 16.4 53.8 40.3l23.4 80.2c12.8 43.7-20.1 87.5-65.6 87.5-26.3 0-49.4-14.9-60.8-37.1-11.6 21.9-34.6 37.1-61.4 37.1-26.6 0-49.7-15-61.3-37-11.6 22-34.7 37-61.3 37-26.8 0-49.8-15.1-61.4-37.1-11.4 22.1-34.5 37.1-60.8 37.1-45.6 0-78.4-43.7-65.6-87.5L30.7 72.3zM96.4 352l320 0 0-66.4c7.6 1.6 15.5 2.4 23.5 2.4 14.3 0 28-2.6 40.5-7.2l0 151.2c0 26.5-21.5 48-48 48l-352 0c-26.5 0-48-21.5-48-48l0-151.2c12.5 4.6 26.1 7.2 40.5 7.2 8.1 0 15.9-.8 23.5-2.4l0 66.4z"/></svg> Varios locales</button>
+        </div>
+
+        <div class="demo" id="demo-hogar">
+          <div class="demo-toolbar">
+            <div class="sim-actions">
+              <button type="button" class="btn btn-sm btn-outline" data-sim="leve"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0c14.7 0 28.2 8.1 35.2 21l216 400c6.7 12.4 6.4 27.4-.8 39.5S486.1 480 472 480L40 480c-14.1 0-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9 20.5-21 35.2-21zm0 352a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.5 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z"/></svg> Simular fuga leve</button>
+              <button type="button" class="btn btn-sm btn-outline" data-sim="critica"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zm0-192a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.6 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z"/></svg> Simular fuga crítica</button>
+              <button type="button" class="btn btn-sm btn-link" data-sim="reset">Restablecer</button>
+            </div>
+            <div class="switch">
+              <span id="vista-label">Vista técnica</span>
+              <button type="button" role="switch" aria-checked="false" aria-labelledby="vista-label" id="vista-switch" class="switch-btn"><span></span></button>
+            </div>
+          </div>
+
+          <ul class="legend" aria-label="Niveles de gravedad">
+            <li><span class="sw sw-normal" aria-hidden="true"></span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Normal: menos que el umbral</li>
+            <li><span class="sw sw-precaucion" aria-hidden="true"></span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0c14.7 0 28.2 8.1 35.2 21l216 400c6.7 12.4 6.4 27.4-.8 39.5S486.1 480 472 480L40 480c-14.1 0-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9 20.5-21 35.2-21zm0 352a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.5 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z"/></svg> Precaución: del umbral a 30 mA</li>
+            <li><span class="sw sw-critico" aria-hidden="true"></span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zm0-192a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.6 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z"/></svg> Crítico: más de 30 mA</li>
+          </ul>
+
+          <div class="demo-grid">
+            <div class="panel status-panel">
+              <div class="status" id="estado" data-level="normal">
+                <span class="status-icon" id="estado-icono"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg></span>
+                <div>
+                  <p class="status-kicker">Estado de la instalación</p>
+                  <p class="status-text" id="estado-texto">Normal: sin fugas detectadas</p>
+                </div>
+              </div>
+              <dl class="metrics">
+                <div><dt>Consumo actual</dt><dd id="m-consumo">1.24 kW</dd></div>
+                <div><dt>Corriente de fuga</dt><dd id="m-fuga">4 mA</dd></div>
+                <div><dt>Tensión</dt><dd id="m-tension">221 V</dd></div>
+              </dl>
+
+              <div class="tech-only" id="vista-tecnica" hidden>
+                <h3 class="panel-title">Telemetría por circuito</h3>
+                <div class="table-wrap">
+                  <table class="tele">
+                    <caption class="sr-only">Telemetría simulada por circuito</caption>
+                    <thead><tr><th scope="col">Circuito</th><th scope="col">Tensión</th><th scope="col">Corriente</th><th scope="col">Fuga</th></tr></thead>
+                    <tbody id="tele-body"></tbody>
+                  </table>
+                </div>
+                <label for="umbral" class="range-label">Umbral de alerta: <strong><output id="umbral-out" for="umbral">15</output> mA</strong></label>
+                <input type="range" id="umbral" min="5" max="30" step="1" value="15" aria-describedby="umbral-ayuda" list="umbral-marcas">
+                <datalist id="umbral-marcas"><option value="5"></option><option value="15"></option><option value="30"></option></datalist>
+                <div class="range-scale" aria-hidden="true"><span>5 mA</span><span>15 mA</span><span>30 mA</span></div>
+                <p class="hint" id="umbral-ayuda">Más bajo, avisa antes pero puede dar alertas por equipos normales. Más alto, avisa menos. Sobre 30 mA siempre es crítico.</p>
+              </div>
+            </div>
+
+            <div class="panel plan-panel">
+              <h3 class="panel-title">Plano de la vivienda</h3>
+              <svg class="plan" id="plano" viewBox="0 0 400 260" role="img" aria-labelledby="plano-desc">
+                <title id="plano-desc">Plano de la vivienda con seis zonas. Ninguna zona tiene alerta.</title>
+                <defs>
+                  <pattern id="trama-precaucion" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                    <rect width="10" height="10" fill="#FFF7E6"/>
+                    <line x1="0" y1="0" x2="0" y2="10" stroke="#B45309" stroke-width="3"/>
+                  </pattern>
+                  <pattern id="trama-critico" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <rect width="8" height="8" fill="#FEF2F2"/>
+                    <path d="M0 0 L8 8 M8 0 L0 8" stroke="#B91C1C" stroke-width="2"/>
+                  </pattern>
+                  <pattern id="trama-apagado" width="12" height="12" patternUnits="userSpaceOnUse">
+                    <rect width="12" height="12" fill="#E2E8F0"/>
+                    <circle cx="6" cy="6" r="1.6" fill="#475569"/>
+                  </pattern>
+                </defs>
+                <g class="zone" data-zone="Sala"><rect x="10" y="10" width="170" height="120"/><text x="95" y="75">Sala</text></g>
+                <g class="zone" data-zone="Cocina"><rect x="180" y="10" width="110" height="120"/><text x="235" y="75">Cocina</text></g>
+                <g class="zone" data-zone="Lavandería"><rect x="290" y="10" width="100" height="120"/><text x="340" y="75">Lavandería</text></g>
+                <g class="zone" data-zone="Dormitorio 1"><rect x="10" y="130" width="150" height="120"/><text x="85" y="195">Dormitorio 1</text></g>
+                <g class="zone" data-zone="Dormitorio 2"><rect x="160" y="130" width="140" height="120"/><text x="230" y="195">Dormitorio 2</text></g>
+                <g class="zone" data-zone="Baño"><rect x="300" y="130" width="90" height="120"/><text x="345" y="195">Baño</text></g>
+              </svg>
+              <p class="hint plan-empty" id="plano-vacio">Sin alertas. Usa los botones de arriba para simular una fuga.</p>
+
+              <div class="alert-card" id="alerta" hidden>
+                <div class="alert-head">
+                  <span class="sev" id="alerta-sev"></span>
+                  <strong id="alerta-titulo"></strong>
+                </div>
+                <p class="alert-meta" id="alerta-hora"></p>
+                <p id="alerta-detalle"></p>
+                <h4>Qué hacer ahora</h4>
+                <ol id="alerta-pasos"></ol>
+                <div class="alert-actions">
+                  <button type="button" class="btn btn-danger btn-sm" id="btn-corte"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M192-32c17.7 0 32 14.3 32 32l0 96 128 0 0-96c0-17.7 14.3-32 32-32s32 14.3 32 32l0 96 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 48.7c-98.6 8.1-176 90.7-176 191.3 0 27.3 5.7 53.3 16 76.9l0 3.1c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-66.7C165.2 398.1 96 319.1 96 224l0-64c-17.7 0-32-14.3-32-32S78.3 96 96 96l64 0 0-96c0-17.7 14.3-32 32-32zM496 256a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm59.3 107.3c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0l-36.7 36.7-36.7-36.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l36.7 36.7-36.7 36.7c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l36.7-36.7 36.7 36.7c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-36.7-36.7 36.7-36.7z"/></svg> Cortar circuito</button>
+                  <button type="button" class="btn btn-outline btn-sm" id="btn-compartir"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M384 192c53 0 96-43 96-96s-43-96-96-96-96 43-96 96c0 5.4 .5 10.8 1.3 16L159.6 184.1c-16.9-15-39.2-24.1-63.6-24.1-53 0-96 43-96 96s43 96 96 96c24.4 0 46.6-9.1 63.6-24.1L289.3 400c-.9 5.2-1.3 10.5-1.3 16 0 53 43 96 96 96s96-43 96-96-43-96-96-96c-24.4 0-46.6 9.1-63.6 24.1L190.7 272c.9-5.2 1.3-10.5 1.3-16s-.5-10.8-1.3-16l129.7-72.1c16.9 15 39.2 24.1 63.6 24.1z"/></svg> Compartir con mi electricista</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel history-panel">
+              <h3 class="panel-title">Historial de los últimos 7 días</h3>
+              <svg class="chart" id="grafico" viewBox="0 0 420 200" role="img" aria-labelledby="grafico-titulo grafico-desc">
+                <title id="grafico-titulo">Consumo diario en kWh</title>
+                <desc id="grafico-desc"></desc>
+              </svg>
+              <p class="hint" id="grafico-resumen"></p>
+            </div>
+          </div>
+          <p class="sr-only" aria-live="assertive" id="anuncio"></p>
+        </div>
+
+        <div class="demo" id="demo-locales" hidden>
+          <ul class="counters" id="contadores" aria-label="Resumen de locales"></ul>
+          <div class="demo-toolbar">
+            <div class="inline-field">
+              <label for="orden">Ordenar por</label>
+              <select id="orden">
+                <option value="gravedad">Gravedad</option>
+                <option value="nombre">Nombre</option>
+              </select>
+            </div>
+            <label class="check-inline"><input type="checkbox" id="solo-alertas"> Ver solo locales con alerta</label>
+          </div>
+          <ul class="sites" id="sitios" aria-live="polite"></ul>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" id="calculadora" aria-labelledby="calc-titulo">
+      <div class="container calc-grid">
+        <div>
+          <h2 id="calc-titulo" class="section-title left">¿Cuánto te cuesta una fuga?</h2>
+          <p class="section-sub left">Una fuga funciona como un aparato que nunca se apaga. Calcula cuánta energía pierdes al mes y cuánto suma en tu recibo.</p>
+          <p class="hint">Fórmula: potencia perdida = tensión × corriente de fuga, encendida las 24 horas durante 30 días. Cambia la tarifa por la de tu recibo.</p>
+        </div>
+        <form class="card calc" id="form-calc" novalidate>
+          <fieldset class="presets">
+            <legend>Ejemplos rápidos</legend>
+            <button type="button" class="chip chip-sm" data-preset="30">Pequeña · 30 mA</button>
+            <button type="button" class="chip chip-sm" data-preset="100">Media · 100 mA</button>
+            <button type="button" class="chip chip-sm" data-preset="300">Grave · 300 mA</button>
+          </fieldset>
+          <div class="field">
+            <label for="c-fuga">Corriente de fuga (mA)</label>
+            <input type="number" id="c-fuga" min="1" max="1000" value="100" inputmode="numeric" aria-describedby="c-fuga-err">
+            <p class="error" id="c-fuga-err"></p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="c-tension">Tensión</label>
+              <select id="c-tension"><option value="220">220 V (monofásico)</option><option value="380">380 V (trifásico)</option></select>
+            </div>
+            <div class="field">
+              <label for="c-tarifa">Tarifa (S/ por kWh)</label>
+              <input type="number" id="c-tarifa" min="0.1" max="5" step="0.01" value="0.80" inputmode="decimal" aria-describedby="c-tarifa-err">
+              <p class="error" id="c-tarifa-err"></p>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Calcular pérdida</button>
+          <div class="calc-result" id="calc-resultado" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    
+    <section class="section section-alt" id="planes" aria-labelledby="planes-titulo">
+      <div class="container">
+        <h2 id="planes-titulo" class="section-title">Elige tu plan</h2>
+        <p class="section-sub">Precios referenciales del piloto, en soles. Todos incluyen el sensor, la visita de instalación y la aplicación.</p>
+        <div class="plans">
+          <article class="plan-card" data-plan="Hogar">
+            <h3>Hogar</h3>
+            <p class="plan-for">Casas y departamentos</p>
+            <p class="price"><span>S/ 349</span> equipo + S/ 9.90 al mes</p>
+            <ul>
+              <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> 1 sensor y hasta 6 zonas</li>
+              <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Alertas y corte remoto</li>
+              <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Historial de 30 días</li>
+              <li class="no"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM168 232l176 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-176 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg> <span>Vista técnica por circuito <span class="sr-only">(no incluida)</span></span></li>
+            </ul>
+            <button type="button" class="btn btn-outline btn-block" data-select-plan aria-pressed="false">Elegir Hogar</button>
+          </article>
+          <article class="plan-card featured" data-plan="Negocio">
+            <p class="badge">El más pedido</p>
+            <h3>Negocio</h3>
+            <p class="plan-for">Restaurantes, panaderías, talleres</p>
+            <p class="price"><span>S/ 699</span> equipo + S/ 19.90 al mes</p>
+            <ul>
+              <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> 1 sensor y hasta 12 circuitos</li>
+              <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Alertas, corte remoto y avisos por SMS</li>
+              <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Historial de 12 meses</li>
+              <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Vista técnica para tu electricista</li>
+            </ul>
+            <button type="button" class="btn btn-primary btn-block" data-select-plan aria-pressed="false">Elegir Negocio</button>
+          </article>
+          <article class="plan-card" data-plan="Negocio Plus">
+            <h3>Negocio Plus</h3>
+            <p class="plan-for">Dos o más locales</p>
+            <p class="price"><span>S/ 649</span> por local + S/ 17.90 al mes por local</p>
+            <ul>
+              <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Todos tus locales en un panel</li>
+              <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Acceso para el encargado de cada local</li>
+              <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Reporte mensual de pérdidas</li>
+              <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> Soporte prioritario</li>
+            </ul>
+            <button type="button" class="btn btn-outline btn-block" data-select-plan aria-pressed="false">Elegir Negocio Plus</button>
+          </article>
+        </div>
+        <div class="plan-summary" id="plan-resumen" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    
+    <section class="section" id="instalacion" aria-labelledby="inst-titulo">
+      <div class="container inst-grid">
+        <div>
+          <h2 id="inst-titulo" class="section-title left">Qué necesitas para instalarlo</h2>
+          <ul class="req-list">
+            <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> <span><strong>Tablero accesible</strong> con espacio para un módulo de riel DIN.</span></li>
+            <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> <span><strong>Wifi de 2,4 GHz</strong> que llegue hasta el tablero.</span></li>
+            <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> <span><strong>Celular</strong> con Android 9 o iOS 14 en adelante, o una computadora con navegador.</span></li>
+            <li><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg> <span><strong>Una visita de 60 a 90 minutos.</strong> La hace un técnico de FuGer-Secure y está incluida en el plan.</span></li>
+          </ul>
+        </div>
+        <form class="card" id="form-compat" novalidate>
+          <h3>¿Funciona en mi instalación?</h3>
+          <p class="hint">Responde dos preguntas y te lo decimos.</p>
+          <div class="field">
+            <label for="s-suministro">Tipo de suministro</label>
+            <select id="s-suministro">
+              <option value="">Selecciona una opción</option>
+              <option value="mono">Monofásico 220 V</option>
+              <option value="tri">Trifásico 380 V</option>
+              <option value="nose">No lo sé</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="s-inmueble">Tipo de inmueble</label>
+            <select id="s-inmueble">
+              <option value="">Selecciona una opción</option>
+              <option value="casa">Casa o departamento</option>
+              <option value="negocio">Negocio o local</option>
+              <option value="locales">Negocio con varios locales</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Verificar compatibilidad</button>
+          <div class="compat-result" id="compat-resultado" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    
+    <section class="section section-warn" id="seguridad" aria-labelledby="seg-titulo">
+      <div class="container">
+        <h2 id="seg-titulo" class="section-title">¿Sospechas de una fuga? Haz esto</h2>
+        <p class="section-sub">Tengas o no FuGer-Secure, estos pasos te protegen.</p>
+        <ol class="safety">
+          <li><strong>No toques cables ni enchufes calientes</strong><span>Si ves chispas, humo u hollín, aléjate y aleja a los demás.</span></li>
+          <li><strong>Baja la llave general</strong><span>Con las manos secas y parado sobre una superficie seca.</span></li>
+          <li><strong>Nunca uses agua</strong><span>Si hay fuego eléctrico, usa un extintor de polvo químico seco (PQS) o de CO₂.</span></li>
+          <li><strong>Pide ayuda</strong><span>Si hay fuego, llama a los bomberos. Si no, llama a un electricista antes de volver a subir la llave.</span></li>
+        </ol>
+        <div class="emergency">
+          <p><strong>Emergencia con fuego:</strong> Cuerpo General de Bomberos Voluntarios del Perú</p>
+          <a class="btn btn-danger" href="tel:116"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z"/></svg> Llamar al 116</a>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section section-alt" id="faq" aria-labelledby="faq-titulo">
+      <div class="container narrow">
+        <h2 id="faq-titulo" class="section-title">Preguntas frecuentes</h2>
+        <div class="accordion">
+          <h3><button type="button" aria-expanded="false" aria-controls="faq1" id="faq1-btn"><span>¿Reemplaza a mi interruptor diferencial?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></button></h3>
+          <div id="faq1" role="region" aria-labelledby="faq1-btn" hidden><p>No. El interruptor diferencial sigue siendo la protección obligatoria. FuGer-Secure se suma a él: vigila la instalación todo el tiempo, avisa antes y te dice dónde buscar.</p></div>
+          <h3><button type="button" aria-expanded="false" aria-controls="faq2" id="faq2-btn"><span>¿Qué tan exacta es la ubicación de la falla?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></button></h3>
+          <div id="faq2" role="region" aria-labelledby="faq2-btn" hidden><p>Te indica el circuito y la zona que registraste para él, por ejemplo "Cocina". No marca el punto exacto del cable, pero evita revisar toda la casa o el local.</p></div>
+          <h3><button type="button" aria-expanded="false" aria-controls="faq3" id="faq3-btn"><span>¿Qué pasa si se cae el internet?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></button></h3>
+          <div id="faq3" role="region" aria-labelledby="faq3-btn" hidden><p>El sensor guarda las mediciones y las envía cuando vuelve la conexión. En los planes Negocio y Negocio Plus las alertas críticas también llegan por SMS.</p></div>
+          <h3><button type="button" aria-expanded="false" aria-controls="faq4" id="faq4-btn"><span>¿Necesito saber de electricidad?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></button></h3>
+          <div id="faq4" role="region" aria-labelledby="faq4-btn" hidden><p>No. La vista simple te muestra el estado con palabras e íconos y te dice qué hacer. La vista técnica es para tu electricista.</p></div>
+          <h3><button type="button" aria-expanded="false" aria-controls="faq5" id="faq5-btn"><span>¿Puedo cortar la luz desde el celular?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></button></h3>
+          <div id="faq5" role="region" aria-labelledby="faq5-btn" hidden><p>Sí, pero solo el circuito con la fuga y siempre después de confirmar. El resto de la instalación sigue con energía.</p></div>
+          <h3><button type="button" aria-expanded="false" aria-controls="faq6" id="faq6-btn"><span>Soy electricista, ¿cómo lo uso con mis clientes?</span><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></button></h3>
+          <div id="faq6" role="region" aria-labelledby="faq6-btn" hidden><p>Tu cliente te comparte la alerta y tú abres la vista técnica: telemetría por circuito, historial de eventos y umbral ajustable. Llegas con el circuito identificado.</p></div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" id="equipo" aria-labelledby="equipo-titulo">
+      <div class="container">
+        <h2 id="equipo-titulo" class="section-title">Quiénes somos</h2>
+        <p class="section-sub">Somos seis estudiantes de Ingeniería de Sistemas de Información de la UPC. Desarrollamos FuGer-Secure en el curso HCI for UX Design.</p>
+        <ul class="team">
+          <li><img src="assets/images/brayan.jpg" alt="Foto de Brayan Casanova" width="300" height="380"><strong>Brayan Casanova Arenas</strong><span>Programación y bases de datos</span></li>
+          <li><img src="assets/images/wallace.jpg" alt="Foto de Carlos Wallace Ramon" width="300" height="380"><strong>Carlos Wallace Ramon Lazo</strong><span>Desarrollo con Python y C++</span></li>
+          <li><img src="assets/images/deyvis.jpg" alt="Foto de Deyvis Enciso" width="300" height="380"><strong>Deyvis Enciso Huaytalla</strong><span>Desarrollo con Java y JavaScript</span></li>
+          <li><img src="assets/images/moises.jpg" alt="Foto de Moises Perez" width="300" height="380"><strong>Moises Perez Rojas</strong><span>Trabajo en equipo y SQL</span></li>
+          <li><img src="assets/images/pedro.jpg" alt="Foto de Pedro Ordoñez" width="300" height="380"><strong>Pedro Ordoñez Bendezú</strong><span>Creación y optimización de páginas</span></li>
+          <li><img src="assets/images/bahiro.jpg" alt="Foto de Bahiro Rojas" width="300" height="380"><strong>Bahiro Rojas Moreno</strong><span>Bases de datos y aplicaciones web</span></li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section class="section section-dark" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contacto-titulo" class="section-title left">Conversemos sobre tu instalación</h2>
+          <p class="section-sub left">Déjanos tus datos y te respondemos en un día hábil. Si prefieres, escríbenos o llámanos.</p>
+          <ul class="channels">
+            <li><a href="https://wa.me/51900000000" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Escríbenos por WhatsApp<span class="sr-only"> (se abre en una pestaña nueva)</span></a></li>
+            <li><a href="mailto:contacto@fuger-secure.com"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></svg> contacto@fuger-secure.com</a></li>
+            <li><a href="tel:+51900000000"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z"/></svg> +51 900 000 000</a></li>
+          </ul>
+          <p class="hint on-dark">Atendemos de lunes a sábado, de 9:00 a 18:00.</p>
+        </div>
+        <form class="card contact-form" id="form-contacto" novalidate>
+          <div class="form-errors" id="resumen-errores" tabindex="-1" hidden></div>
+          <fieldset class="field">
+            <legend>¿Qué necesitas?</legend>
+            <div class="radios">
+              <label><input type="radio" name="tipo" value="Información" checked> Información sobre el servicio</label>
+              <label><input type="radio" name="tipo" value="Visita técnica"> Visita técnica de evaluación</label>
+              <label><input type="radio" name="tipo" value="Asesoría para mi negocio"> Asesoría para mi negocio</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="f-nombre">Nombre completo <span class="req">(obligatorio)</span></label>
+            <input type="text" id="f-nombre" name="nombre" autocomplete="name" aria-describedby="f-nombre-err" required>
+            <p class="error" id="f-nombre-err"></p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-correo">Correo electrónico <span class="req">(obligatorio)</span></label>
+              <input type="email" id="f-correo" name="correo" autocomplete="email" aria-describedby="f-correo-err" required>
+              <p class="error" id="f-correo-err"></p>
+            </div>
+            <div class="field">
+              <label for="f-celular">Celular <span class="req">(obligatorio)</span></label>
+              <input type="tel" id="f-celular" name="celular" autocomplete="tel" inputmode="numeric" maxlength="11" aria-describedby="f-celular-ayuda f-celular-err" required>
+              <p class="hint" id="f-celular-ayuda">9 dígitos, empieza con 9.</p>
+              <p class="error" id="f-celular-err"></p>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-segmento">Soy <span class="req">(obligatorio)</span></label>
+              <select id="f-segmento" name="segmento" aria-describedby="f-segmento-err" required>
+                <option value="">Selecciona tu perfil</option>
+                <option>Hogar</option>
+                <option>Negocio</option>
+                <option>Técnico electricista</option>
+              </select>
+              <p class="error" id="f-segmento-err"></p>
+            </div>
+            <div class="field">
+              <label for="f-plan">Plan de interés</label>
+              <select id="f-plan" name="plan">
+                <option value="">Aún no lo sé</option>
+                <option>Hogar</option>
+                <option>Negocio</option>
+                <option>Negocio Plus</option>
+              </select>
+            </div>
+          </div>
+          <div class="field" id="campo-distrito" hidden>
+            <label for="f-distrito">Distrito para la visita <span class="req">(obligatorio)</span></label>
+            <input type="text" id="f-distrito" name="distrito" autocomplete="address-level3" aria-describedby="f-distrito-err">
+            <p class="error" id="f-distrito-err"></p>
+          </div>
+          <div class="field">
+            <label for="f-mensaje">Cuéntanos tu caso <span class="req">(obligatorio)</span></label>
+            <textarea id="f-mensaje" name="mensaje" rows="4" maxlength="500" placeholder="Ejemplo: el recibo subió este mes y a veces salta la llave de la cocina." aria-describedby="f-mensaje-cont f-mensaje-err" required></textarea>
+            <p class="hint counter" id="f-mensaje-cont">0 de 500 caracteres</p>
+            <p class="error" id="f-mensaje-err"></p>
+          </div>
+          <div class="field">
+            <label class="check-inline"><input type="checkbox" id="f-acepto" aria-describedby="f-acepto-err"> Acepto que FuGer-Secure use mis datos solo para responder esta solicitud.</label>
+            <p class="error" id="f-acepto-err"></p>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9L229.2 276.1c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8l496.9-178z"/></svg> Enviar solicitud</button>
+          <div class="form-ok" id="confirmacion" role="status" tabindex="-1" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand"><strong>FuGer-Secure</strong></p>
+        <p>Proyecto académico del curso 1ASI0784 HCI for UX Design, UPC, 2026-20.</p>
+        <p class="small">Íconos: Font Awesome Free (CC BY 4.0). Los datos de la demo son simulados.</p>
+      </div>
+      <nav aria-label="Enlaces del pie de página">
+        <ul class="footer-links">
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#seguridad">Qué hacer ante una fuga</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  
+  <dialog id="dlg-corte" aria-labelledby="dlg-titulo" aria-describedby="dlg-texto">
+    <h2 id="dlg-titulo">¿Cortar el circuito de <span id="dlg-zona"></span>?</h2>
+    <p id="dlg-texto">Se apagarán los equipos conectados a ese circuito. El resto de la instalación seguirá con energía. Podrás reactivarlo cuando tu electricista revise la falla.</p>
+    <div class="dlg-actions">
+      <button type="button" class="btn btn-outline" id="dlg-cancelar">Cancelar</button>
+      <button type="button" class="btn btn-danger" id="dlg-confirmar"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M192-32c17.7 0 32 14.3 32 32l0 96 128 0 0-96c0-17.7 14.3-32 32-32s32 14.3 32 32l0 96 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 48.7c-98.6 8.1-176 90.7-176 191.3 0 27.3 5.7 53.3 16 76.9l0 3.1c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-66.7C165.2 398.1 96 319.1 96 224l0-64c-17.7 0-32-14.3-32-32S78.3 96 96 96l64 0 0-96c0-17.7 14.3-32 32-32zM496 256a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm59.3 107.3c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0l-36.7 36.7-36.7-36.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l36.7 36.7-36.7 36.7c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l36.7-36.7 36.7 36.7c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-36.7-36.7 36.7-36.7z"/></svg> Sí, cortar circuito</button>
+    </div>
+  </dialog>
+
+  <a href="#inicio" class="to-top" id="volver-arriba" aria-label="Volver al inicio"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M214.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-370.7 105.4 105.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg></a>
+
+  <template id="tpl-ok"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg></template>
+  <template id="tpl-warn"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0c14.7 0 28.2 8.1 35.2 21l216 400c6.7 12.4 6.4 27.4-.8 39.5S486.1 480 472 480L40 480c-14.1 0-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9 20.5-21 35.2-21zm0 352a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.5 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z"/></svg></template>
+  <template id="tpl-crit"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zm0-192a32 32 0 1 0 0 64 32 32 0 1 0 0-64zm0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.6 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z"/></svg></template>
+  <template id="tpl-off"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M288 0c0-17.7-14.3-32-32-32S224-17.7 224 0l0 256c0 17.7 14.3 32 32 32s32-14.3 32-32L288 0zM146.3 98.4c14.5-10.1 18-30.1 7.9-44.6s-30.1-18-44.6-7.9C43.4 92.1 0 169 0 256 0 397.4 114.6 512 256 512S512 397.4 512 256c0-87-43.4-163.9-109.7-210.1-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6c49.8 34.8 82.3 92.4 82.3 157.6 0 106-86 192-192 192S64 362 64 256c0-65.2 32.5-122.9 82.3-157.6z"/></svg></template>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
